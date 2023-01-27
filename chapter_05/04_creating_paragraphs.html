@@ -11,10 +11,10 @@
 			var dataset = [ 5, 10, 15, 20, 25 ];
 			
 			d3.select("body").selectAll("p")
-				.data(dataset)
-				.enter()
+				.data(dataset) // everything past this point is executed 5 times
+				.enter() // creates a paragraph 
 				.append("p")
-				.text("New paragraph!");
+				.text(dataset);
 			
 		</script>
 	</body>
